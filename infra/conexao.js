@@ -1,4 +1,5 @@
-import mysql from 'mysql'
+import mysql from 'mysql';
+
 
 const conexao = mysql.createConnection({
     host: 'localhost',
@@ -7,5 +8,7 @@ const conexao = mysql.createConnection({
     password: '',
     database: 'bd-copa'
 })
+
+conexao.connect()
 
 export default conexao;
